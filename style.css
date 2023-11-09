@@ -122,3 +122,84 @@ main {
   letter-spacing: 1px;
   color: hsla(0, 0%, 100%, 0.6);
 }
+
+@media (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    height: 80vh;
+  }
+
+  .card-image {
+    height: 35vh;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-image::before {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-text {
+    height: 45vh;
+  }
+
+  footer {
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    height: 70vh;
+  }
+
+  .card-image {
+    height: 30vh;
+  }
+  .card-text {
+    height: 40vh;
+  }
+
+  .title,
+  .description {
+    text-align: center;
+    margin: 0;
+  }
+
+  .stats {
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+    height: 90vh;
+  }
+
+  .card-image {
+    height: 25vh;
+  }
+
+  .card-text {
+    height: 65vh;
+    padding: 0 35px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .stats .stat span:first-child {
+    text-align: center;
+  }
+}
