@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 60px;
+}
+
+main {
+  display: flex;
+  width: 1140px;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 447px;
+  display: grid;
+  grid-template-columns: 570px 540px;
+}
+
+.card-image {
+  line-height: 0;
+  position: relative;
+  background: url("images/image-header-desktop.jpg");
+  background-blend-mode: color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.card-image::before {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: hsla(278, 100%, 29%, 0.55);
+  backdrop-filter: hue-rotate(120deg);
+}
+
+.title {
+  margin: 0;
+  letter-spacing: 0.25px;
+  font-size: 36px;
+}
+
+.title span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-text {
+  background: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding: 0 73px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.description {
+  margin: 0px 50px 0 0;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  line-height: 1.65;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 75px 0 0;
+}
+
+.stats .stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stats .stat span:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stats .stat:last-child span:first-child {
+  text-transform: uppercase;
+}
+
+.stats .stat span:last-child {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
