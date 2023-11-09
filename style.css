@@ -145,7 +145,7 @@ main {
   }
 
   footer {
-    bottom: -20px;
+    bottom: 20px;
   }
 }
 
@@ -158,6 +158,7 @@ main {
   .card-image {
     height: 30vh;
   }
+
   .card-text {
     height: 40vh;
   }
