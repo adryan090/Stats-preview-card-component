@@ -130,6 +130,11 @@ main {
     width: 70%;
     height: 80vh;
   }
+  .description,
+  .title {
+    margin: 0;
+    text-align: center;
+  }
 
   .card-image {
     height: 35vh;
@@ -147,12 +152,14 @@ main {
   footer {
     bottom: 20px;
   }
+  .stats {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
   main {
     width: 90%;
-    height: 70vh;
   }
 
   .card-image {
@@ -160,13 +167,9 @@ main {
   }
 
   .card-text {
-    height: 40vh;
-  }
-
-  .title,
-  .description {
-    text-align: center;
-    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 60vh;
   }
 
   .stats {
